@@ -82,7 +82,6 @@ $RECYCLE.BIN/
 bower_components
 
 # dist folder
-dist
 
 # compile style
 style/*.css
