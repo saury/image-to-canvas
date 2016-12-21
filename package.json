@@ -1,0 +1,42 @@
+{
+  "name": "image-to-canvas",
+  "version": "1.0.0",
+  "description": "drag and drop plugin by plain javascript",
+  "main": "image2canvas.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scripts": "browserify -s image2canvas -do dist/image2canvas.js src/image2canvas.js && uglifyjs -m -c -o dist/image2canvas.min.js dist/image2canvas.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saury/image-to-canvas"
+  },
+  "keywords": [
+    "image",
+    "canvas",
+    "image to canvas",
+    "image 2 canvas",
+    "javascript"
+  ],
+  "author": "saury",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saury/image-to-canvas/issues"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.17.5",
+    "browserify": "^13.1.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sass": "^2.3.2",
+    "node-sass": "^3.13.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "homepage": "https://github.com/saury/image-to-canvas#readme",
+  "dependencies": {
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <link rel="stylesheet" href="../style/index.css">
+</head>
+<body>
+    <h1>Convert image to canvas</h1>
+    <h3>basic use:</h3>
+    <ul>
+        <li>
+            <img src="../images/big.jpg">
+        </li>
+        <li>
+            <img src="../images/big.jpg" img-to-canvas>
+        </li>
+    </ul>
+    <h3>lazy load:</h3>
+    <ul>
+        <li>
+            <img src="../images/big.jpg">
+        </li>
+        <li>
+            <img ssrc="../images/big.jpg" img-to-canvas>
+        </li>
+    </ul>
+    <script src="../dist/image2canvas.js"></script>
+    <script>
+        var toCanvas = new Img2Canvas();
+        toCanvas.init();
+        var lazyCanvas = new Img2Canvas({
+            placeholder: 'ssrc'
+        });
+        lazyCanvas.init()
+    </script>
+</body>
+</html>
